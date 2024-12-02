@@ -1,0 +1,84 @@
+
+$roxo-escuro: #4B0082;
+$verde-musgo: #2E8B57;
+$verde-claro: #98FF98;
+$cinza-claro: #D3D3D3;
+$branco: #FFFFFF;
+
+#container {
+  text-align: center;
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4B0082; // Usando o roxo escuro para o fundo
+  padding: 20px; // Espaçamento interno
+  border-radius: 10px; // Bordas arredondadas
+
+  strong {
+    font-size: 20px;
+    line-height: 26px;
+    color: $branco; // Cor branca para o texto em negrito
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    color: $cinza-claro; // Cor cinza claro para o texto
+    margin: 0;
+  }
+
+  a {
+    text-decoration: #28a745;
+    color: $verde-musgo; // Cor verde musgo para os links
+    font-weight: bold;
+
+    &:hover {
+      background-color: #007bff;
+      color: $verde-claro; // Cor verde mais claro para o efeito hover
+    }
+  }
+}
+
+ion-card-content {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $verde-musgo; // Cor verde musgo para o conteúdo destacado no cartão
+}
+
+ion-button {
+  --background:$roxo-escuro; /* Cor de fundo verde */
+  --color: $roxo-escuro;        /* Cor do texto no botão */
+}
+
+ion-button:hover {
+  --background: #218838; 
+}
+
+ion-button:active {
+  --background: #1e7e34; 
+}
+
+ion-content {
+  background-color: #4B0082 !important; /* Cor roxa escura */
+  color: $roxo-escuro;
+}
+
+/* Mudando a cor de fundo do ion-header */
+ion-header {
+  background-color: #4B0082 !important; /* Cor roxa escura */
+}
+
+/* Mudando o fundo do ion-toolbar dentro do header */
+ion-toolbar {
+  background-color: #4B0082 !important; /* Cor roxa escura */
+}
+
+/* Mudando a cor do título no ion-toolbar */
+ion-title {
+  color: #2E8B57 !important; /* Cor branca para o título */
+}
+
+
